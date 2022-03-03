@@ -1,0 +1,13 @@
+<div class="flex flex-row pt-10">
+    <div class="basis-1/3"></div>
+    <div class="basis-1/3 w-[800px] h-[300px] shadow-lg rounded-[10px] bg-slate-300 p-4">
+        <h1 class="text-[30px] font-bold text-sky-900">Demo form: SKU - ngForm</h1>
+        <h6 class="font-medium text-sky-900">SKU</h6>
+        <form m #f="ngForm"
+        (ngSubmit)="onSubmit(f.value)">
+            <input type="text" class="w-full border rounded-md p-2 placeholder-slate-400" placeholder="SKU" name="sku" ngModel />
+            <button type="submit"
+                class="bg-sky-900 hover:bg-sky-700 focus:bg-sky-900 p-2 mt-3 w-24 rounded-[10px] text-white">Submit</button>
+        </form>
+    </div>
+</div>
